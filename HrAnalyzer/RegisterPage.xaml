@@ -1,0 +1,31 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HrAnalyzer"
+             x:Class="HrAnalyzer.RegisterPage"
+             Title="Register">
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+        <Entry x:Name="UsernameEntry" Placeholder="Username" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+        <Entry x:Name="AgeEntry" Placeholder="Age" Keyboard="Numeric" />
+        <Entry x:Name="WeightEntry" Placeholder="Weight" Keyboard="Numeric" />
+        <Entry x:Name="HeightEntry" Placeholder="Height" Keyboard="Numeric" />
+        <Picker Title="Gender"
+                ItemsSource="{Binding Genders}"
+                SelectedItem="{Binding SelectedGender}" />
+
+
+        <Button
+            x:Name="RegisterButton"
+            Text="Register"
+            FontSize="20"
+            HorizontalOptions="FillAndExpand"
+            Clicked="OnRegisterButtonClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

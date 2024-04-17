@@ -1,0 +1,32 @@
+<!-- LoginPage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HrAnalyzer.StartPage">
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+        <Label
+            Text="Welcome to HrAnalyzer!"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="LoginButton"
+            Text="Login"
+            FontSize="20"
+            HorizontalOptions="FillAndExpand"
+            Clicked="OnLoginButtonClicked" />
+
+        <Button
+            x:Name="RegisterButton"
+            Text="Register"
+            FontSize="20"
+            HorizontalOptions="FillAndExpand"
+            Clicked="OnRegisterButtonClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

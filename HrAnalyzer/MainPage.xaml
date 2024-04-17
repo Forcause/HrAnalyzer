@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HrAnalyzer.MainPage"
+                                         xmlns:local="clr-namespace:HrAnalyzer"
+             Title="Main Screen">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="30"
+        VerticalOptions="Center">
+
+        <ScrollView>
+            <Label x:Name="textLabel"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand" />
+        </ScrollView>
+
+        <Button
+            x:Name="LoadFileButton"
+            Text="Load File"
+            HorizontalOptions="FillAndExpand"
+            Clicked="OnLoadFileButtonClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
